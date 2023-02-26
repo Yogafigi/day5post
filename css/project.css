@@ -1,0 +1,256 @@
+#navbar {
+  background: rgb(247, 247, 247);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-logo img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+  margin-bottom: -5%;
+}
+
+.navbar-content {
+  margin-left: 60px;
+  display: flex;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-item {
+  margin-left: 40px;
+}
+
+.navbar-item:nth-child(2) {
+  margin-left: 20px;
+}
+
+.navbar-link {
+  color: black;
+  font-size: 17px;
+}
+
+a:hover {
+  color: aquamarine;
+}
+
+.navbar-link::after {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-button {
+  background: black;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-left: 15px;
+  width: 110px;
+  height: 25px;
+  border-radius: 10px;
+  margin-right: 57px;
+  margin-top: 10px;
+}
+
+.button-contact {
+  color: white;
+}
+/* navbar end */
+
+/* PROJECT */
+.container {
+  width: 100vh;
+  height: 130vh;
+  margin: auto;
+}
+.container h1 {
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+form * {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.form-item label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.form-item input {
+  font-size: 20px;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 5px 4px -5px #333;
+}
+.form-item input[type="file"] {
+  background-color: white;
+}
+.form-item-date {
+  display: flex;
+  justify-content: space-between;
+}
+.date-item {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+.date-item label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.form-item-date .date-item input {
+  font-size: 20px;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 5px 4px -5px #333;
+}
+.form-item .description {
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  font-size: 20px;
+  height: 80px;
+  box-shadow: 0 5px 4px -5px #333;
+}
+.form-item .tech {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 250px;
+}
+.tech .tech-item {
+  margin: 5px;
+  width: 45%;
+}
+
+.form-item .tech .tech-item label {
+  color: #787474;
+}
+.submit {
+  float: right;
+  width: 120px;
+  margin-right: 0px;
+}
+.submit button {
+  font-size: 20px;
+  width: 100%;
+  padding: 7px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* END BLOG FORM */
+
+/* CONTAINER2 */
+
+.container2 {
+  background-color: white;
+  padding-top: 45px;
+}
+h1.head {
+  text-align: center;
+}
+.container-blog {
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  margin: 30px auto;
+  padding-bottom: 300px;
+}
+.card-post {
+  width: 28%;
+  height: 380px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+}
+.card-post .title-date {
+  margin: 15px 0;
+}
+.card-post .title-date .title,
+.card-post .title-date .date {
+  margin: 0;
+}
+.card-post .title-date .title {
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.card-post .title-date .date {
+  font-weight: normal;
+  font-size: 15px;
+  color: rgb(216, 207, 207);
+}
+.card-post .post-img {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.card-post .post-content p {
+  margin: 2px 0;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden !important;
+  display: -webkit-box;
+}
+.card-post .tag-tech {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.card-post .tag-tech img {
+  width: 25px;
+  margin-right: 11px;
+}
+.card-post .tag-tech a {
+  background-color: grey;
+  text-decoration: none;
+  color: black;
+  padding: 5px 0;
+}
+.card-post .post-button {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.card-post button {
+  width: 49%;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  background-color: #111727;
+}

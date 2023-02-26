@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Day 5 - Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body style="font-family: Arial, sans-serif; background-color: #c2c1c1">
+    <nav id="navbar" class="navbar-container">
+      <div class="navbar-main">
+        <div class="navbar-content">
+          <a href="/" class="navbar-logo"
+            ><img src="assets/image/logo.png" alt="dumbways-logo"
+          /></a>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a
+                href="/"
+                class="navbar-link"
+                style="font-weight: bold; margin-right: 20px"
+                >Home</a
+              >
+            </li>
+            <li class="navbar-item">
+              <a href="myProject.html" class="navbar-link">My Project</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-second">
+        <div class="navbar-button">
+          <a href="/contact.html" id="contact-button" class="button-contact"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h2>GET IN TOUCH</h2>
+      <form class="form">
+        <div class="input">
+          <label for="input-name">Name</label>
+          <input type="text" id="input-name" required />
+        </div>
+        <div class="input">
+          <label for="input-gmail">Email</label>
+          <input type="email" id="input-gmail" prequired />
+        </div>
+        <div class="input">
+          <label for="input-phoneNumber">Phone Number</label>
+          <input type="number" id="input-phoneNumber" required />
+        </div>
+        <div class="input">
+          <label for="input-subject">Subject</label>
+          <select id="input-subject">
+            <option value="" hidden>Select</option>
+            <option value="fullstack">Fullstack Web Developer</option>
+            <option value="dataScientist">Data Scientist</option>
+            <option value="Backend">Back End</option>
+            <option value="frontend">Front End Developer</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="input-message">Your Message</label>
+          <textarea id="input-message" cols="50" rows="5"></textarea>
+        </div>
+
+        <button
+          type="submit"
+          id="button-submit"
+          class="button-submit"
+          onclick="getContact()"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
